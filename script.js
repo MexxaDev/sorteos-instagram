@@ -42,9 +42,9 @@ function pickWinners(count) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-  const randoms = shuffled.slice(0, Math.min(count, 3));
-  while (randoms.length < 3) randoms.push('xxx');
-  return [randoms[0], 'nanoloc26', randoms[1], 'ailenliberatti', randoms[2]];
+  const randoms = shuffled.slice(0, Math.min(count, 2));
+  while (randoms.length < 2) randoms.push('xxx');
+  return [randoms[0], 'nanoloc26', randoms[1], 'ailenliberatti', 'alber_lezcano'];
 }
 
 /* ========== LOADING PHASE ========== */
